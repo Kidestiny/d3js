@@ -2,7 +2,7 @@
   <div id="app">
     <md-app md-waterfall md-mode="fixed">
       <md-app-toolbar class="md-primary">
-        <span class="md-title">基于vue+d3.js的可视化系统</span>
+        <span class="md-title">d3.js的可视化系统</span>
       </md-app-toolbar>
 
       <md-app-drawer md-permanent="full">
@@ -23,9 +23,6 @@
             <span class="md-list-item-text">Map</span>
           </md-list-item>
 
-          <md-list-item>
-            <span class="md-list-item-text">Spam</span>
-          </md-list-item>
         </md-list>
       </md-app-drawer>
 
@@ -82,7 +79,7 @@ export default {
 .tooltip {
   position: absolute;
   font: 14px consolas;
-  background-color: #aaa;
+  background-color: rgb(250, 250, 250);
   border: 1px;
   border-radius: 4px;
   text-align: center;

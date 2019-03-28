@@ -61,7 +61,7 @@
           </div>
           <div class="line">
             <span class="tip">运费(Shipping Cost)</span>
-            <md-switch v-model="measure3" value="Shipping Cost" />
+            <md-switch v-model="measure2" value="Shipping Cost" />
           </div>
         </md-card-content>
       </md-card>
@@ -117,19 +117,17 @@
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
 import PieChart from "@/components/PieChart.vue";
 
 export default {
   name: "home",
   data: () => ({
-    measure: "Quantity",
-    measure2: "Quantity",
-    measure3: "Quantity",
+    measure: "Profit",
+    measure2: "Profit",
+    measure3: "Profit",
     dimension1: "Order Priority"
   }),
   components: {
-    HelloWorld,
     PieChart
   }
 };

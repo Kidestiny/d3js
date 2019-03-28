@@ -1,3 +1,3 @@
 export default {
-    dataUrl: 'http://qiniu.schoolife.zhitantech.com/static/data.csv'
+    dataUrl: 'https://cdn.yice.org.cn/data.csv'
 }

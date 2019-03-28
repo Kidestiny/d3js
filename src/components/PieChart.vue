@@ -1,4 +1,4 @@
-<template>
+<template>   
   <div class="pie-chart">
     <div :id="chartId" :style="{width:width+'px',height:height+'px'}"></div>
   </div>
@@ -13,6 +13,7 @@ export default {
     dimension1_focus: "",
     dimension2_focus: ""
   }),
+
   props: {
     width: {
       type: Number,
@@ -56,8 +57,8 @@ export default {
       );
       let countArr = indexSet.map(val => count[val]);
       return {
-        indexSet,
-        countArr,
+        indexSet,//量度数组
+        countArr,//量度对应的累加
         outerRadius: 150,
         innerRadius: 0,
         width: 300,
@@ -72,6 +73,7 @@ export default {
     },
     piedata2() {
       let indexSet, countArr;
+  
       if (this.dimension2 != "") {
         let chartData = this.piedata2Sourse.map(val => val[this.dimension2]);
         indexSet = [...new Set(chartData)];
